@@ -113,6 +113,16 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         ) {
             Text("권수열 문자")
         }
+        Button(
+            onClick = {
+                val intent = Intent(context, SecondActivity::class.java)
+                startActivity(context, intent, null)
+            },
+            modifier = modifier.fillMaxWidth()
+        ) {
+            Text("액티비티")
+        }
+
     }
 }
 
